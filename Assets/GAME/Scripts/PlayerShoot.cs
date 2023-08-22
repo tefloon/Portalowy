@@ -50,8 +50,8 @@ public class PlayerShoot : MonoBehaviour
         if (Physics.Raycast(headTransform.position, headTransform.forward, out hit))
         {
             print(hit.transform.name);
-            ShotGraphics(portalToPlaceColor, hit);
-            ppm.PlacePortal(portalToPlaceColor, hit);
+			ShotGraphics(portalToPlaceColor, hit);
+			ppm.PlacePortal(portalToPlaceColor, hit);
         }
     }
 

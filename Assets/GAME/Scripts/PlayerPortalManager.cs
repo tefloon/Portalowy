@@ -22,7 +22,7 @@ public class PlayerPortalManager : MonoBehaviour
     public PlayerUIManager puim;
 
 
-    private Transform _orangeCurrent;
+    public Transform _orangeCurrent;
     public Transform OrangeCurrent {
         get
         {
@@ -30,13 +30,13 @@ public class PlayerPortalManager : MonoBehaviour
         }
         set
         {
-
+            print("ustawiam orange current");
             puim.UpdateOrange( true );
             _orangeCurrent = value;
         } 
     }
 
-    private Transform _blueCurrent;
+    public Transform _blueCurrent;
     public Transform BlueCurrent
     {
         get
@@ -45,8 +45,8 @@ public class PlayerPortalManager : MonoBehaviour
         }
         set
         {
-            //puim.UpdateBlue(true);
-            _blueCurrent = value;
+			//puim.UpdateBlue(true);
+			_blueCurrent = value;
         }
     }
 
